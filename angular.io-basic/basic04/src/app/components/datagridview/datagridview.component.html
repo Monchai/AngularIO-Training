@@ -1,0 +1,20 @@
+<div>
+  <div>Customer Data</div>
+  <table>
+    <thead>
+      <tr>
+        <th>No</th><th>Code</th><th>Full Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let cust of customers, let idx = index ">
+        <!-- <td>{{cust.id}}</td> -->
+        <td>{{idx+1}}</td>
+        <td>{{cust.code}}</td>
+        <td>{{cust.firstname}} {{cust.lastname}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+  <button (click)="loadData()">refresh..</button>
+</div>

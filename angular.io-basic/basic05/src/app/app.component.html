@@ -1,0 +1,4 @@
+<button (click)="swapShowDG()">Show / Hide DG</button>
+
+<app-datagridview [hidden]="!isShowDG">Customer Data (use hidden)</app-datagridview>
+<app-datagridview *ngIf="isShowDG">Customer Data (use ngIF)</app-datagridview>
